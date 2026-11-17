@@ -89,7 +89,7 @@ const PHOTOS={
  e:['d96a12fc1da0af004aaa3bd282015275.jpg','8aa4f11908afd538daf04c8d7c246959.jpg'],   // счётчик
  f:['bbe323c73420916b32f54ac01d9c01e8.jpg','4bdaf6a8fda1ba14812c6a2a5d21373a.jpg']    // финал
 };
-const START=new Date(2026,5,6); // дата знакомства: год, месяц-1, день
+const START=new Date(2026,4,6); // дата знакомства: год, месяц-1, день
 
 const $=id=>document.getElementById(id);
 document.querySelectorAll('[data-p]').forEach(p=>(PHOTOS[p.dataset.p]||['','']).forEach(u=>{const f=document.createElement('figure');f.className='ph'+(u?'':' empty');f.innerHTML=u?`<img src="${u}" alt="" loading="lazy">`:'<span>✿<br>вставь фото</span>';p.append(f)}));
